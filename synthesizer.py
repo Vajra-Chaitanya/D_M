@@ -28,8 +28,18 @@ def synthesize_answer(user_query: str, execution_results: List[Dict[str, Any]], 
         if result.get('status') == 'success':
             tool_name = result.get('tool', 'unknown')
             output = result.get('output', '')
-            if output and not output.startswith('Error:'):
+            
+            # Handle different output types
+            if isinstance(output, dict):
+                # If output is a dictionary, store it as is
                 outputs[tool_name] = output
+            elif isinstance(output, str):
+                # If output is a string, check for errors before storing
+                if output and not output.startswith('Error:'):
+                    outputs[tool_name] = output
+            else:
+                # Convert other types to string
+                outputs[tool_name] = str(output)
     
     if not outputs:
         return "❌ **No results were generated.** The query could not be processed successfully."

@@ -1,0 +1,54 @@
+2025-11-11 23:39:59,944 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-11 23:39:59,944 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-11 23:40:00,177 - orchestrator - WARNING - Tool function not found in pubmed_search: module 'tools.pubmed_search' has no attribute 'pubmed_search_tool'
+2025-11-11 23:40:01,903 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-11 23:40:02,983 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-11 23:40:04,213 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-11 23:40:06,308 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-11 23:40:11,970 - orchestrator - INFO - Starting new session: session_20251111_234011
+2025-11-11 23:40:11,972 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-11 23:40:15,018 - llm_client - WARNING - Rate limited. Waiting 5 seconds...
+2025-11-11 23:40:22,157 - llm_client - WARNING - Rate limited. Waiting 5 seconds...
+2025-11-11 23:40:29,501 - llm_client - WARNING - Rate limited. Waiting 5 seconds...
+2025-11-11 23:40:36,847 - llm_client - WARNING - Rate limited. Waiting 5 seconds...
+2025-11-11 23:47:12,447 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-11 23:47:12,447 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-11 23:47:12,463 - orchestrator - WARNING - Tool function not found in pubmed_search: module 'tools.pubmed_search' has no attribute 'pubmed_search_tool'
+2025-11-11 23:47:13,862 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-11 23:47:14,931 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-11 23:47:16,210 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-11 23:47:18,314 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-11 23:47:43,326 - orchestrator - INFO - Starting new session: session_20251111_234743
+2025-11-11 23:47:43,328 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-11 23:47:49,661 - llm_client - INFO - LLM API call successful
+2025-11-11 23:47:49,664 - planner - INFO - Successfully parsed and validated LLM plan with 2 steps
+2025-11-11 23:47:49,664 - planner - INFO - Successfully created LLM-based plan
+2025-11-11 23:47:49,664 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-11 23:47:49,665 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-11 23:47:55,893 - llm_client - INFO - LLM API call successful
+2025-11-11 23:47:55,898 - verifier - INFO - Successfully parsed and validated LLM verification (score: 92)
+2025-11-11 23:47:55,898 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-11 23:47:55,899 - orchestrator - INFO - Verification score: 92/100, Approved: True
+2025-11-11 23:47:55,900 - orchestrator - INFO - ✅ Plan approved by verifier (score: 92/100)
+2025-11-11 23:47:55,901 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-11 23:47:55,902 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-11 23:47:57,688 - orchestrator - INFO - Executing step 2: qa_engine
+2025-11-11 23:48:14,721 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-11 23:48:16,774 - llm_client - WARNING - Rate limited. Waiting 5 seconds...
+2025-11-11 23:48:30,063 - llm_client - INFO - LLM API call successful
+2025-11-11 23:48:30,068 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-11 23:48:30,070 - orchestrator - INFO - Session logged to: logs\session_20251111_234830.json
+2025-11-11 23:48:30,075 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251111_234830.json
+2025-11-11 23:57:52,796 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-11 23:57:52,796 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-11 23:57:52,808 - orchestrator - WARNING - Tool function not found in pubmed_search: module 'tools.pubmed_search' has no attribute 'pubmed_search_tool'
+2025-11-11 23:57:54,236 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-11 23:57:55,294 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-11 23:57:59,328 - __main__ - ERROR - Error starting DualMind Orchestrator: Cannot find empty port in range: 7860-7860. You can specify a different port by setting the GRADIO_SERVER_PORT environment variable or passing the `server_port` parameter to `launch()`.
+2025-11-11 23:58:12,712 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-11 23:58:12,712 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-11 23:58:12,724 - orchestrator - WARNING - Tool function not found in pubmed_search: module 'tools.pubmed_search' has no attribute 'pubmed_search_tool'
+2025-11-11 23:58:14,105 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-11 23:58:15,154 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-11 23:58:16,462 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-11 23:58:18,541 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
